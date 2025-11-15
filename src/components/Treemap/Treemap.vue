@@ -23,7 +23,7 @@ import { preProcess, squarify } from './models/Squarified'
 
 defineProps<{ items: NestedArray<Content>[] }>()
 
-const treemapReference = useTemplateRef('treemapReference')
+const treemapReference = useTemplateRef<HTMLDivElement>('treemapReference')
 const templateRectangle = ref<Rectangle | undefined>(undefined)
 
 onMounted(() => {

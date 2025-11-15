@@ -5,11 +5,13 @@
 
 	const props = defineProps<{ node: Node<Content> }>()
 
+	defineSlots<{ default: (props: { content: Content }) => any }>();
+
 	const nodeStyle = computed<StyleValue>(() => {
 		const flexingNode = { flexGrow: props.node.weight }
 		
 		if(props.node instanceof InternalNode) {
-			const direction = props.node.direction == Direction.column ? "column" : "row"
+			const direction = props.node.direction === Direction.column ? "column" : "row"
 			return { ...flexingNode, flexDirection: direction }
 		} else {
 			return flexingNode
@@ -20,9 +22,7 @@
 <template>
 	<span v-if="(node instanceof LeafNode)"
 		  :style="nodeStyle">
-		<slot v-if="(node instanceof LeafNode)"
-			:content="node.content" 
-			></slot>
+		<slot :content="node.content"></slot>
 	</span>
 	<div v-if="(node instanceof InternalNode)" 
 		 :style="nodeStyle" 
