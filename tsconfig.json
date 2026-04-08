@@ -10,14 +10,14 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "paths": {
       "*":[
-        "src/*",
-        "@eslint-types/typescript-eslint/*"
+        "./src/*",
+        "./node_modules/@eslint-types/typescript-eslint/*"
       ]
     } 
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "dev/main.ts", "test/*.spec.ts"]
+  "include": ["./src/**/*.ts", "./src/**/*.d.ts", "./src/**/*.vue", "./dev/main.ts", "./test/*.spec.ts"]
 }
  
