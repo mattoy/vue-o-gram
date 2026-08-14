@@ -1,8 +1,34 @@
 {
   "name": "vue-o-gram",
-  "version": "1.0.5",
-  "private": true,
+  "version": "1.1.0",
   "type": "module",
+  "description": "Eine Vue 3 Komponente für interaktive Treemap-Visualisierungen",
+  "main": "./dist/vue-o-gram.umd.js",
+  "module": "./dist/vue-o-gram.es.js",
+  "types": "./dist/components/Treemap/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/components/Treemap/index.d.ts",
+      "import": "./dist/vue-o-gram.es.js",
+      "require": "./dist/vue-o-gram.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "treemap",
+    "visualization",
+    "component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
