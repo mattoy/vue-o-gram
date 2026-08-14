@@ -1,6 +1,6 @@
 {
   "name": "vue-o-gram",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "test:mutation": "stryker run"
   },
   "dependencies": {
-    "vue": "^3.5.38"
+    "vue": "^3.5.41"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^9.6.1",
@@ -20,20 +20,20 @@
     "@stryker-mutator/vitest-runner": "^9.6.1",
     "@testing-library/vue": "^8.1.0",
     "@types/eslint": "^9.6.1",
-    "@typescript-eslint/eslint-plugin": "^8.61.1",
-    "@typescript-eslint/parser": "^8.61.1",
-    "@vitejs/plugin-vue": "^6.0.7",
-    "@vitest/coverage-v8": "^4.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vitest/coverage-v8": "^4.1.10",
     "@vue/test-utils": "^2.4.11",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-functional": "^10.0.0",
-    "eslint-plugin-vue": "^10.9.2",
-    "jsdom": "^29.1.1",
+    "eslint-plugin-vue": "^10.10.0",
+    "jsdom": "^30.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "vite": "^8.0.16",
-    "vitest": "^4.1.9",
-    "vue-tsc": "^3.3.5"
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10",
+    "vue-tsc": "^3.3.9"
   }
 }
