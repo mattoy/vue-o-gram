@@ -2,7 +2,7 @@
   "name": "vue-o-gram",
   "version": "1.1.1",
   "type": "module",
-  "description": "Eine Vue 3 Komponente für interaktive Treemap-Visualisierungen",
+  "description": "A Vue 3 component for interactive treemap visualizations",
   "main": "./dist/vue-o-gram.umd.js",
   "module": "./dist/vue-o-gram.es.js",
   "types": "./dist/components/Treemap/index.d.ts",
