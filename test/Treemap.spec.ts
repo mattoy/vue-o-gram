@@ -8,7 +8,7 @@ describe('Treemap', () => {
 	type TestData = {label:string, weight: number}
 
 	test('is fully displayed', async () => {
-		global.document.querySelector = vi.fn(() => ({
+		document.querySelector = vi.fn(() => ({
             getBoundingClientRect: vi.fn( function() {
                 return { 
 					width: 600, 
