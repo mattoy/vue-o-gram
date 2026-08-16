@@ -1,14 +1,14 @@
 {
   "name": "vue-o-gram",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "type": "module",
   "description": "A Vue 3 component for interactive treemap visualizations",
   "main": "./dist/vue-o-gram.umd.js",
   "module": "./dist/vue-o-gram.es.js",
-  "types": "./dist/components/Treemap/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/components/Treemap/index.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/vue-o-gram.es.js",
       "require": "./dist/vue-o-gram.umd.js"
     }
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -41,7 +41,6 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "vue": "^3.5.41",
     "@stryker-mutator/core": "^10.0.0",
     "@stryker-mutator/typescript-checker": "^10.0.0",
     "@stryker-mutator/vitest-runner": "^10.0.0",
@@ -60,8 +59,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "vite": "^8.2.1",
+    "vite-plugin-dts": "^5.0.3",
     "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.10"
+    "vue": "^3.5.41"
   },
   "allowScripts": {
     "fsevents@2.3.3": true
