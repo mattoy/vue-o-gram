@@ -5,12 +5,20 @@ import dts from 'vite-plugin-dts'
 /// <reference types="vitest" />
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: 'dev',
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    dts({
+      include: ['src/**/*.ts', 'src/**/*.vue'],
+      outDir: 'dist',
+      rollupTypes: true,
+      entryRoot: 'src/components/Treemap',
+      insertTypesEntry: true
+    })
+  ],
   build: {
     lib: {
-      entry: './main.ts',
-      name: 'VueOGram',
+      entry: 'src/components/Treemap/index.ts',
+      name: 'vue-o-gram',
       fileName: (format) => `vue-o-gram.${format === 'es' ? 'es' : 'umd'}.js`
     },
     rollupOptions: {

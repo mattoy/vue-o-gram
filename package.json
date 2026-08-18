@@ -31,7 +31,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite --config vite.dev.config.tsbuild",
     "serve": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
