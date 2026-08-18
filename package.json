@@ -32,7 +32,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite --config vite.dev.config.tsbuild",
+    "build": "vite --config vite.lib.config.ts build",
     "serve": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
