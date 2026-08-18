@@ -1,6 +1,6 @@
 {
   "name": "vue-o-gram",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "description": "A Vue 3 component for interactive treemap visualizations",
   "main": "./dist/vue-o-gram.umd.js",
