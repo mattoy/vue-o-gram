@@ -11,7 +11,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/vue-o-gram.es.js",
       "require": "./dist/vue-o-gram.umd.js"
-    }
+    },
+    "./style.css": "./dist/vue-o-gram.css"
   },
   "files": [
     "dist"
